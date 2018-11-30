@@ -43,7 +43,6 @@ transform:translate(-50%,-50%);
 }
 body {
   background: #333;
-  background-image: url('https://assets.codepen.io/images/classy_fabric.png');
 }
 #candles {
     position:absolute;
@@ -119,7 +118,7 @@ body {
     top: 25px;
     left: 10px;
     height:136px;
-    background:url(http://wp.agens.no/smakebit/wp-content/themes/smakebiten/img/flamess.png) 0px 0px no-repeat;
+    background:url(./flamess.png) 0px 0px no-repeat;
 }
 
 
@@ -244,7 +243,7 @@ body {
   <li></li>
   <li></li>
 </ul>
- <div id="santa"></div>  
+ <div id="santa"></div>
 <div  style="font-size:100px;  text-align: center; ">
 <p>
 </p>
@@ -259,7 +258,7 @@ body {
 
 <div class="askepott x">
   <div class="askepott y">
-    <img class="askepott" src="./askepott.gif" width="600" height="462" alt="Askepott"/>
+    <img class="askepott" src="./images/askepott.gif" width="600" height="462" alt="Askepott"/>
   </div>
 </div>
 
@@ -512,14 +511,14 @@ function draw() {
   /*var dx = Math.random()*300;
   var dy = Math.random()*300;*/
   var dx = 600;
-  var dy = 80;  
-  
+  var dy = 80;
+
   function init(){
     b = document.getElementById('santa');
     console.log('started...');
     moveSanta();
   }
-  
+
   window.requestAnimFrame = (function(){
   return  window.requestAnimationFrame       ||
           window.webkitRequestAnimationFrame ||
@@ -528,7 +527,7 @@ function draw() {
             window.setTimeout(callback, 1000 / 60);
           };
   })();
-  
+
   function moveSanta(){
     x += (dx-x) * 0.015;
     y += (dy-x) * 0.015;
@@ -546,13 +545,13 @@ function draw() {
         b.style.transform = "scaleX(1)";
         dx = document.documentElement.clientWidth - 360;
       }
-           
+
     }
     requestAnimFrame(moveSanta, b);
   }
-  
+
   init();
-  
+
 })()
 
 </script>
@@ -849,7 +848,7 @@ body {
   position: absolute;
   width: 360px;
   height: 250px;
-  background-image: url('http://www.netanimations.net/Animated_santa_reindeer_flying.gif');
+  background-image: url('./Animated_santa_reindeer_flying.gif');
   background-repeat: no-repeat;
 }
 
@@ -885,12 +884,12 @@ body {
 }
 
 .stars {
-  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  background:#000 url('./images/stars.png') repeat top center;
   z-index:-2;
 }
 
 .twinkling{
-  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  background:transparent url('./images/twinkling.png') repeat top center;
   z-index:-1;
 
   -moz-animation:move-twink-back 200s linear infinite;
