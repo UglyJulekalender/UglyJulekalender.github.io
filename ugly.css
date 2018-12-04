@@ -110,7 +110,7 @@ body {
   top: 25px;
   left: 10px;
   height: 136px;
-  background: url(./flamess.png) 0px 0px no-repeat;
+  background: url(./images/flamess.png) 0px 0px no-repeat;
 }
 
 #fl1 {
@@ -248,7 +248,7 @@ body {
 }
 
 .no {
-  background-image: url("./askepott.gif");
+  background-image: url("./images/askepott.gif");
 }
 
 .no:before {
