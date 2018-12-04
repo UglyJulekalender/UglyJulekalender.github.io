@@ -2,12 +2,9 @@ function draw() {
   var names = [
     'Øystein',
     'Kristoffer',
-    'Nils',
-    'Per',
-    'Janne',
-    'Eilif',
-    'Kari',
-    'Ola',
+    'William',
+    'Vladimir',
+    'Reinart',
   ];
   var name = names[Math.floor(Math.random() * names.length)];
   document.getElementById('name').innerHTML = name;
