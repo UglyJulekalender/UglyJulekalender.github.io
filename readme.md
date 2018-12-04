@@ -2,7 +2,7 @@ UglyJulekalender
 
 Ugly julekalender > Ugly christmas sweater
 
-Contributors: Doff3n, obradl
+Contributors: Doff3n, obradl, wkillerud
 
 We accept all pull requests, but we follow some rules:
     
