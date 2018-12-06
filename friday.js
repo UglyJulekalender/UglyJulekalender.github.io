@@ -1,0 +1,1 @@
+document.getElementById('fridayholder').className = new Date().getDay() === 5 ? 'friday' : 'no-friday';

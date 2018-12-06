@@ -1,3 +1,8 @@
+
+body{
+  background-color: black;
+}
+
 .blink {
   animation-duration: 1s;
   animation-name: blink;
@@ -37,16 +42,13 @@
   left: 50%;
   top: 70%;
   transform: translate(-50%, -50%);
-}
-
-body {
-  background: #333;
+  background: transparent;
 }
 
 #candles {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  left: 10%;
+  top: 22%;
   margin-left: -60px;
 }
 
@@ -211,8 +213,8 @@ body {
   }
 }
 
-.yes,
-.no {
+.friday,
+.no-friday {
   position: relative;
   width: 100%;
   height: 100%;
@@ -221,11 +223,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.yes {
-  background-image: url("./askepott.gif");
-}
-
-.yes:before {
+.friday:before {
   position: absolute;
   top: 10%;
   left: 0;
@@ -234,7 +232,8 @@ body {
   margin: 0 auto;
   content: 'YES, IT´S FRIDAY!';
   color: red;
-  font-family: 'Comic Sans MS', coursive;
+  font-family: 'Press Start 2P', coursive;
+  z-index: 100;
   font-size: 90px;
   font-weight: bold;
   display: block;
@@ -247,11 +246,7 @@ body {
   animation:rainbow 1s infinite;
 }
 
-.no {
-  background-image: url("./images/askepott.gif");
-}
-
-.no:before {
+.no-friday:before {
   position: absolute;
   top: 10%;
   left: 0;
@@ -260,7 +255,7 @@ body {
   margin: 0 auto;
   content: 'IT´S NOT FRIDAY';
   color: dimgray;
-  font-family: 'Comic Sans MS';
+  font-family: 'Press Start 2P';
   font-size: 90px;
   font-weight: bold;
   display: block;
@@ -322,9 +317,6 @@ body {
 100% {color: #ff0080;}
 }
 
-body {
-  background: #000;
-}
 
 .lightrope {
   text-align: center;
