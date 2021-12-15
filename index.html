@@ -3,35 +3,121 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="nes.css" rel="stylesheet" />
+  <link href="ugly.css" rel="stylesheet" />
 </head>
 <body>
-<h1>Christmas Calendar </h1>
-<ul class = "container">
-  <li id="picture1">1</li>
-  <li id="picture2">2</li>
-  <li id="picture3">3</li>
-  <li id="picture4">4</li>
-  <li id="picture5">5</li>
-  <li id="picture6">6</li>
-  <li id="picture7">7</li>
-  <li id="picture8">8</li>
-  <li id="picture9">9</li>
-  <li id="picture10">10</li>
-  <li id="picture11">11</li>
-  <li id="picture12">12</li>
-  <li id="picture13">13</li>
-  <li id="picture14">14</li>
-  <li id="picture15">15</li>
-  <li id="picture16">16</li>
-  <li id="picture17">17</li>
-  <li id="picture18">18</li>
-  <li id="picture19">19</li>
-  <li id="picture20">20</li>
-  <li id="picture21">21</li>
-  <li id="picture22">22</li>
-  <li id="picture23">23</li>
-  <li id="picture24">24</li>
- </ul>
-</body>
+  <div class="stars"></div>
+  <div class="twinkling"></div>
+  <ul class="lightrope">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+  <div id="santa"></div>
+  <div style="font-size:100px; text-align: center;">
+    <p>
+      <button class="btn is-success" style="width: 550px; font-size:50px; margin-top:20px; height:200px;" onclick="draw()">
+        Trekk navn
+      </button>
+    </p>
+    <p>
+      <div id="name" class="blink" style="color:green;" ></div>
+    </p>
+    <marquee style="color:red" behavior="up">
+      God jul!
+    </marquee>
+  </div>
+
+  <div class="askepott x">
+      <div class="askepott y">
+        <img class="askepott" src="./images/askepott.gif" width="600" height="462" alt="Askepott"/>
+      </div>
+    </div>
+  <div id="fridayholder"></div>
+  
+  <div style="display: flex; width: 100%; justify-content: space-between;">
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/E8gmARGvPlI?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/PqHQeu6bPqQ" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+  </div>
+  
+  <div class="frame">
+    <canvas id="tree"></canvas>
+  </div>
+  <div id="candles">
+    <div class="candle">
+      <div class="flamegroup">
+        <div class="flame" id="fl1"></div>
+        <div class="flame" id="fl2"></div>
+        <div class="flame" id="fl3"></div>
+      </div>
+      </div>
+      <div class="candle">
+        <div class="flamegroup">
+          <div class="flame" id="fl1"></div>
+          <div class="flame" id="fl2"></div>
+          <div class="flame" id="fl3"></div>
+        </div>
+      </div>
+      <div class="candle">
+        <div class="flamegroup">
+          <div class="flame" id="fl1"></div>
+          <div class="flame" id="fl2"></div>
+          <div class="flame" id="fl3"></div>
+        </div>
+      </div>
+      <div class="candle">
+        <div class="flamegroup ">
+          <div class="flame" id="fl1"></div>
+          <div class="flame" id="fl2"></div>
+          <div class="flame" id="fl3"></div>
+        </div>
+      </div>
+  </div>
+  </body>
+  <script type="text/javascript" src="snowstorm.js"></script>
+  <script type="text/javascript" src="ugly.js"></script>
+  <script type="text/javascript" src="treeswirl.js"></script>
+  <script type="text/javascript" src="movesanta.js"></script>
+  <script type="text/javascript" src="friday.js"></script>
   
 </html>
